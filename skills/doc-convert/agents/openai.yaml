@@ -1,0 +1,4 @@
+interface:
+  display_name: "Doc Convert"
+  short_description: "Document conversion skill for agents"
+  default_prompt: "Use $doc-convert to convert a .tex file to PDF and normalize mixed documents to Markdown."
