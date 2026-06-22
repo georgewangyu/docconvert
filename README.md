@@ -2,6 +2,23 @@
 
 Skill-first document conversion toolkit.
 
+DocConvert provides small, scriptable conversion primitives for agent workflows
+that need to normalize documents into Markdown, render LaTeX to PDF, or produce
+rich-text output from Markdown.
+
+## Quick start
+
+```bash
+# Document to Markdown
+python3 skills/doc-convert/scripts/convert_to_markdown.py ./input.docx -o ./output.md
+
+# LaTeX to PDF
+bash skills/doc-convert/scripts/latex_to_pdf.sh ./input.tex ./output.pdf
+
+# Markdown to Rich Text
+python3 skills/doc-convert/scripts/convert_markdown_to_rich_text.py ./input.md -o ./output.rtf
+```
+
 ## Status
 
 This repo is currently a small library of script entrypoints rather than a full
@@ -32,7 +49,7 @@ docconvert/
     └── scripts/
 ```
 
-## Quick usage
+## Usage examples
 
 ```bash
 # LaTeX to PDF
